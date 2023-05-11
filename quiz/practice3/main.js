@@ -52,4 +52,4 @@ let employee2 = new Employee("Anna Smith", 100000, Date(2013, 5, 6));
 // // let manager = new Manager(45000, Date(2005, 10, 11));
 // // manager.name = "Mike Stone";
 console.log(employee1)
-// console.log(Employee.getCounter())
+console.log(employee1 instanceof Employee)
