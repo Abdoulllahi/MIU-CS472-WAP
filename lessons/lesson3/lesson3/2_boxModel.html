@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* box-sizing is content-box by default */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .simple {
+            /* width: 500px; */
+            margin: 20px auto;
+            border: 10px solid green;
+            box-sizing: border-box;
+        }
+
+        .fancy {
+            box-sizing: border-box;
+            /* width: 500px; */
+            margin: 50px auto;
+            padding: 20px;
+            border-width: 10px;
+            border-color: green;
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="simple">I am smaller</div>
+    <div class="fancy">I am bigger</div>
+
+
+</body>
+
+</html>

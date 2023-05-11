@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div {
+
+            border: 1px solid black;
+
+        }
+
+        #b {
+
+            position: relative;
+            height: 200px;
+        }
+        #c {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            right: 0px;
+            width: 50px;
+        }
+        @media only screen and (max-width: 1024px) {
+            #a {
+              width: 90%;
+            }
+          }
+          
+          @media only screen and (max-width: 768px) {
+            #a {
+              width: 100%;
+            }
+          }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="a">Text for a
+        <div id="b">Text for b
+            <div id="c">Text for c</div>
+        </div>
+    </div>
+</body>
+
+</html>

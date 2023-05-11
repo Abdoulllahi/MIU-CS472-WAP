@@ -1,0 +1,12 @@
+h1 {
+    border: 5px solid red;
+    max-width: 500px;
+}
+
+h2 {
+    /* border-left: thick dotted #CC0088;
+    border-bottom-color: rgb(0, 128, 128);
+    border-bottom-style: double; */
+    border: 5px solid blue;
+    width: 500px;
+}

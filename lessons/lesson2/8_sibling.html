@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 2 CSS</title>
+    <!-- 
+        ~ every single elements that comes right after element with selector
+        + direct sibling li.red + li.green
+
+    -->
+    <style>
+        /* li.red~li {
+            background: red;
+        } */
+
+        /* div+a {
+            background: blue;
+        } */
+
+        /* li:first-child {
+            background: yellow;
+        } */
+
+        /* li:nth-child(2) {
+            background: green;
+        } */
+
+        li:not(.green) {
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div>This is div </div>
+    <a href="">Anchor 1</a>
+    <a href="">Anchor 2</a>
+    <ul>
+        <li>Item 1</li>
+        <li class="red">Item 2</li>
+        <li class="green">Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+
+
+    </ul>
+</body>
+
+</html>
