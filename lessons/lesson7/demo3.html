@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum(num1, num2) {
+            console.log(this);
+            console.log(num1 + num2);
+        }
+
+        // sum(1, 2);
+        const obj1 = { x: 1 };
+        const obj2 = { firstname: 'John' };
+        const obj3 = {lastname: 'White'};
+
+
+        sum.call(obj1, 4, 6);
+        sum.apply(obj2, [9, 10]);
+        console.log('------------');
+        const sumWithThisBind = sum.bind(obj3, 66, 10);
+        sumWithThisBind();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
