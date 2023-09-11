@@ -18,10 +18,10 @@
 //     console.log("span1");
 // }
 
-// div.addEventListener('click', setDiv, true);// // true - caturing, false - bubbling
-// p.addEventListener('click', setP, false);
-// span.addEventListener('click', setSpan, true);
-// // span.addEventListener('click', setSpan1);
+div.addEventListener('click', setDiv, true);// // true - caturing, false - bubbling
+p.addEventListener('click', setP, false);
+span.addEventListener('click', setSpan, true);
+span.addEventListener('click', setSpan1);
 
 document.getElementById("frm1").addEventListener("submit", (event) => {
     event.preventDefault();
